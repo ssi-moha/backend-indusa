@@ -14,14 +14,14 @@ services:
       driver: none
 
   server:
-    build: ./docker
+    build: docker
     ports:
       - "5001:5001"
     environment:
       MONGO_URI: mongodb://root:password@mongo/admin
       PORT: 5001
     volumes:
-      - ./:./
+      - ./:/Documents/sinane
     depends_on:
       - mongo
     command: ["npm", "start"]

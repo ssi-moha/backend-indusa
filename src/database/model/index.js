@@ -1,5 +1,5 @@
-const db = require("../../services/mongodb");
-const registerSchema = require("../schemas/index");
+const db = require("../../service/mongodb");
+const registerSchema = require("../schema");
 const user = require("../schema/user");
 const client = require("../schema/client");
 const object = require("../schema/object");

@@ -1,4 +1,4 @@
-const db = require("../../services/mongodb");
+const db = require("../../service/mongodb");
 const user = require("./user");
 const client = require("./client");
 const object = require("./object");

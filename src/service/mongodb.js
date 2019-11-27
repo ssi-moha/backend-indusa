@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const { uri } = require('../configs')();
+const { uri } = require('../config')();
 
 async function connect() {
   await mongoose.connect(uri, { autoIndex: false, useNewUrlParser: true });
